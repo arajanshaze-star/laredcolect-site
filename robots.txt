@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://arajanshaze-star.github.io/laredcolect-site/sitemap.xml

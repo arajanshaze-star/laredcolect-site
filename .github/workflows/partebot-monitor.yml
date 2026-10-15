@@ -1,0 +1,42 @@
+name: ParteBot Apify Monitor
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 8 * * *'
+permissions:
+  contents: read
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Inspect recent runs (read-only)
+        env:
+          APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
+        run: |
+          python3 - <<'PY'
+          import json, os, urllib.request, urllib.parse
+          token = os.environ.get('APIFY_TOKEN')
+          if not token:
+              raise SystemExit('Missing APIFY_TOKEN secret')
+          base = 'https://api.apify.com/v2'
+          def get(path):
+              req = urllib.request.Request(base + path, headers={'Authorization': 'Bearer ' + token})
+              with urllib.request.urlopen(req, timeout=30) as response:
+                  return json.load(response)
+          actor = 'formidable_bedpost~pdf-part-number-splitter'
+          actor_data = get('/acts/' + actor).get('data', {})
+          print('Actor:', actor_data.get('name', actor))
+          runs = get('/acts/' + actor + '/runs?limit=30&desc=1').get('data', {}).get('items', [])
+          statuses = {}
+          for run in runs:
+              status = run.get('status', 'UNKNOWN')
+              statuses[status] = statuses.get(status, 0) + 1
+              print(run.get('id', ''), status, run.get('startedAt', ''))
+          with open(os.environ['GITHUB_STEP_SUMMARY'], 'a', encoding='utf-8') as f:
+              f.write('## ParteBot: latest run statuses\n\n')
+              f.write('Actor: `formidable_bedpost/pdf-part-number-splitter`\n\n')
+              f.write('| Status | Runs |\n|---|---:|\n')
+              for status, count in sorted(statuses.items()):
+                  f.write(f'| {status} | {count} |\n')
+              f.write('\nThis monitor does not execute the actor or test payments.\n')
+          PY

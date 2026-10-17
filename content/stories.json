@@ -1,0 +1,40 @@
+[
+  {
+    "id": "lrc-bloop-noaa-004",
+    "title": "El sonido del océano que parecía IMPOSIBLE: The Bloop 🌊 #Shorts",
+    "description": "En 1997 se registró un potente sonido submarino conocido como The Bloop. La NOAA explicó después que procedía de la fractura de hielo en la Antártida. Fuente: https://oceanservice.noaa.gov/facts/bloop.html/\n\nLas imágenes son recreaciones generadas con IA y la voz también es sintética. #Ciencia #Oceano #Misterios",
+    "narration": "En mil novecientos noventa y siete, unos micrófonos submarinos registraron un sonido extraordinariamente potente en el Pacífico. Lo llamaron The Bloop. Durante años circuló una explicación fantástica: ¿había sido producido por un animal gigantesco? Pero la investigación de la NOAA encontró una respuesta mucho más concreta. El sonido era compatible con la fractura de enormes masas de hielo cerca de la Antártida. No fue un monstruo marino. Fue la fuerza del hielo. Y eso también es asombroso.",
+    "shots": [
+      {"duration":8,"caption":"1997: UNA SEÑAL EXTRAÑA","prompt":"Original photorealistic documentary visualization of a deep ocean hydrophone monitoring station, Atlantic-blue underwater darkness, suspended particles, slow elegant camera movement, credible marine engineering, no logos no words no creatures."},
+      {"duration":8,"caption":"EL MISTERIO THE BLOOP","prompt":"Original cinematic visualization of ocean acoustic wave patterns as subtle luminous rings in immense deep dark blue water, abstract but science-inspired, smooth cinematic travel, no inscriptions, no animals or known designs."},
+      {"duration":8,"caption":"HIELO EN LA ANTÁRTIDA","prompt":"Original realistic wide documentary scene showing towering Antarctic glacier face calving a large sheet of blue-white ice into the southern ocean, cinematic slow motion, natural daylight, no people no brands."},
+      {"duration":8,"caption":"CIENCIA, NO MONSTRUOS","prompt":"Original calm cinematic Antarctic icebergs seen from slightly below ocean surface, blue ice fractures and bubbles, authentic natural movement, beautifully lit undersea documentary aesthetic, no inscriptions or living creatures."}
+    ],
+    "source_urls": ["https://oceanservice.noaa.gov/facts/bloop.html/"],
+    "approved": true,
+    "rights_confirmed": true,
+    "privacy": "public",
+    "synthetic_media": true,
+    "category_id": "28",
+    "publish_after": "2026-10-25T17:00:00Z"
+  },
+  {
+    "id": "lrc-voyager-disco-005",
+    "title": "La NASA envió un DISCO a las estrellas… ¿qué contiene? ✨ #Shorts",
+    "description": "Las dos sondas Voyager llevan un Disco de Oro que recoge sonidos, imágenes y saludos de la Tierra en 55 idiomas. NASA: https://science.nasa.gov/mission/voyager/golden-record-contents/\n\nIlustraciones y narración generadas con IA; no se presentan como imágenes de archivo. #NASA #Voyager #Ciencia #Espacio",
+    "narration": "En mil novecientos setenta y siete, la humanidad lanzó al espacio dos mensajes muy especiales. Las sondas Voyager llevan cada una un Disco de Oro: una cápsula del tiempo con sonidos de la Tierra, música, imágenes y saludos en cincuenta y cinco idiomas. Un equipo coordinado por Carl Sagan seleccionó su contenido. No es una señal recibida de otros mundos. Es un mensaje que nosotros enviamos, por si algún día alguien encuentra una de las naves. ¿Qué sonido de la Tierra habrías escogido tú?",
+    "shots": [
+      {"duration":8,"caption":"UN MENSAJE DE LA TIERRA","prompt":"Original cinematic outer space scene, a small unbranded 1970s-inspired robotic deep space probe drifting past distant stars with a flat round golden disk attached, realistic space lighting, non-archival depiction, no logos or inscriptions."},
+      {"duration":8,"caption":"UN DISCO PARA EL COSMOS","prompt":"Original cinematic studio macro image of a simple circular golden phonograph record engraved with abstract non-legible geometric patterns, dramatically lit against deep blue-black scientific background, no logos no text."},
+      {"duration":8,"caption":"55 IDIOMAS","prompt":"Original poetic documentary-style view of Earth seen from orbit slowly rotating, gentle sunlit atmosphere with cloud patterns, polished photorealistic astronomy visualization, no logos, no text."},
+      {"duration":8,"caption":"¿QUIÉN LO ENCONTRARÁ?","prompt":"Original dramatic cinematic deep space perspective with a tiny anonymous probe traveling toward a broad field of stars, subtle camera drift and sense of distance, realistic astrophotography style, no logos no writing."}
+    ],
+    "source_urls": ["https://science.nasa.gov/mission/voyager/golden-record-contents/"],
+    "approved": true,
+    "rights_confirmed": true,
+    "privacy": "public",
+    "synthetic_media": true,
+    "category_id": "28",
+    "publish_after": "2026-11-01T18:00:00Z"
+  }
+]

@@ -1,0 +1,12 @@
+.local/
+*.pyc
+__pycache__/
+.venv/
+.env
+*.mp4
+*.mp3
+*.wav
+.idea/
+.DS_Store
+.pytest_cache/
+client_secret*.json
